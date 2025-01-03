@@ -23,7 +23,7 @@ scene.add(ambientLight);
 // Load watch model
 const loader = new GLTFLoader();
 let watch;
-loader.load('public/watch.glb', (gltf) => {
+loader.load('/watch.glb', (gltf) => {
   watch = gltf.scene;
   watch.scale.set(0.04, 0.04, 0.04); // Scale the watch
   watch.visible = false; // Hide initially
